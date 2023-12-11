@@ -11,7 +11,7 @@
 }
 
 html {
-    background-image: url(https://i.pinimg.com/564x/dd/ee/63/ddee63962d13548f78a7de7405ae04d1.jpg);   
+    background-image: url(https://i.pinimg.com/564x/e9/63/e6/e963e61e4a4de228dedb4fe0342a27ca.jpg);   
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -44,9 +44,8 @@ form {
 .container {
     align-items: flex-end;
     backdrop-filter: blur(3px);
-    background-image: url(https://i.pinimg.com/564x/dd/ee/63/ddee63962d13548f78a7de7405ae04d1.jpg);
+    background-image: url(https://i.pinimg.com/564x/e9/63/e6/e963e61e4a4de228dedb4fe0342a27ca.jpg);
     background-repeat: no-repeat;
-    backdrop-filter: blur(3px);
     background-size: cover;
     box-shadow: 5px 6px 35px 9px black;
     border: 1.5px solid black; 
