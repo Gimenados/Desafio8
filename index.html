@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" id="estiloDefault" href="css/estilo.css">
+    <!-- <link rel="stylesheet" id="estiloFuturo" href="css/estilo-futuro.css"> -->
+    <!-- <link rel="stylesheet" id="estiloRetro" href="css/estilo-retro.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo N8</title>
+</head>
+
+<body> 
+    <button class="change" type="button" onclick="onClick()"><i class="bi bi-arrow-left-right"></i></button>
+    <h1>Vení al Gym! 💪🏻</h1>
+    <form id="miForm">
+        <section class="container">
+            <fieldset>
+                <legend> 🙋🏼‍♂️ Datos Personales 👀</legend>
+                <div class="primer-section">
+                    <label for="name">Nombre:*</label3>
+                    <input type="text" id="name" required><br>
+                    <label for="apellido">Apellido:*</label>
+                    <input type="text" name="apellido" id="apellido" required><br>
+                    <label for="doc">Documento:*</label>
+                    <input type="text" id="numeroDocumento" name="numeroDocumento" pattern="\d+" required> <br>
+                    <label for="nacion">Nacionalidad:*</label>
+                    <select name="nacionalidad" id="nacionalidad" placeholder="Seleccionar" required>
+                        <option value="" selected>- Seleccionar -</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="francia">Francia</option>
+                        <option value="italia">Italida</option>
+                    </select><br>
+                    <label for="miText">Contanos un poco de vos...</label> <br>
+                
+                    <textarea id="miText" name="texto"></textarea><br>
+                    <label for="sexo">Sexo:*</label>
+                    <div class="section-container">
+                        <input type="radio" name="sexo" id="m" required><label for="m">Masculino</label>
+                        <input type="radio" name="sexo" id="f" required><label for="f">Femenino</label>
+                        <input type="radio" name="sexo" id="otro" required><label for="otro">Otro</label>
+                    </div>
+                </div>
+            </fieldset>
+            <main class="div-container">
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+            </main>
+            <fieldset id="miFormulario" class="container-fieldset">
+                <legend>📱 Datos de Contacto 📧</legend>
+                    <label for="tel">Telefono:*</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Código de área y número" max="10" min="10"
+                    required><br>
+                    <label for="direc">Direccion de correo electronico:*</label>
+                    <input type="email" name="email" id="email" placeholder="mail@gmail.com" required>
+            </fieldset>
+            <main class="div-container">
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+                <div class="divRadio"></div>
+            </main>
+            <fieldset class="container-fieldset2">
+                <legend>🚴🏻‍♀️ Actividades 🚴🏻</legend>
+                <p class="text1">Por favor, indicar cuales Actividades te interesan.</p>
+                <p class="text">Sede Palermo:</p> 
+                <div class="container-1">
+                    <input type="radio" name="" id="">
+                    <label for="">Basquet</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Futbol</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Boxeo</label>
+                    <input type="radio">
+                    <label for="">Tenis</label>
+                </div>
+                <p class="text">Sede Rosario:</p> 
+                <div class="container-1">
+                    <input type="radio" name="" id="">
+                    <label for="">Basquet</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Futbol</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Rugby</label>
+                    <input type="radio">
+                    <label for="">Voley</label>
+                </div>
+            </fieldset>
+        </section>
+        <p>
+            <input id="conditions" name="conditions" type="checkbox" oninput="onChangeTyC()" required>
+            <label for="conditions" class="label-estilo">Acepto términos y condiciones*</label>
+        </p>
+        <p>
+            <input id="conditions" name="conditions" type="checkbox" oninput="onChangeTyC()" required>
+            <label for="conditions" class="label-estilo">Deseo recibir novedades</label>
+        </p>
+        <div class="button-container">
+            <button type="submit">Iniciar afiliación</button>
+            <button  id="recordarButton" onclick="recordarEstilo()">Recordar</button>
+            <button onclick="resetForm()">Restablecer</button>
+        </div>
+    </form>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

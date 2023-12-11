@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2? family= Merriweather+Sans & family= Nosifer & family= Poppins & family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200 & family= Roboto:wght@100 & display=swap' );
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+html {
+    background-color: #1F2023;
+    overflow-x: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    table-layout: fixed;
+}
+
+h1 {
+    border-bottom: 1rem solid #4D6D63;
+    border-top: 1rem solid #4D6D63;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    justify-content: center;
+    table-layout: fixed;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    width: 74vw;
+}
+
+/* Formulario completo */
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+    table-layout: fixed;
+}
+
+/* Primer parte del formulario */
+
+.primer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    background-color: #A6C1B9;
+    table-layout: fixed;
+}
+
+fieldset:focus-within {
+    background-color: #9ebeb7;
+}
+
+legend {
+    background-color: #2B3D37;
+    padding: 8px;
+    text-align: start;
+    font-weight: 700;
+    color: white;
+}
+
+label {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+input {
+    box-sizing: border-box;
+    justify-content: center;
+    height: 1.8rem;
+    text-align: center;
+    width: 88%;
+}
+
+input[type="text"] {
+    text-align: right;
+}
+
+input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+    margin-left: 2px;
+}
+
+input[type="email"], input[type="tel"]  {
+    text-align: right;
+    margin-left: 3rem;
+}
+
+input[type="text"]:focus, 
+input[type="text"].not-empty,
+input[type="email"]:focus,
+input[type="email"].not.empty,
+input[type="tel"]:focus,
+input[type="tel"].not.empty, textarea:focus, textarea.not-empty
+ {
+    background-color: #4C6A63;
+    color: white;
+}
+
+select {
+    width: 88%;
+    height: 30px;
+    text-align: center;
+}
+
+textarea {
+    width: 88%;
+    height: 6rem;
+    resize: vertical;
+    text-align: right;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para suavizar los cambios */
+}
+
+.section-container {
+    display: flex !important;
+    width: 88% !important;
+    margin-left: 2.8rem;
+    justify-content: center;
+}
+
+/* Puntos entre fieldset */
+
+.div-container {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 4rem;
+    justify-content: center;
+    margin-left: 8rem;
+    table-layout: fixed;
+    width: 70%;
+}
+
+.divRadio {
+    background-color: #A6C1B9;
+    border-radius: 50%; 
+    margin: 2rem 0.7rem 2rem 0.4rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.container-fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Tercera parte del formulario */
+
+.text1 {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.text {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+}
+
+.container-1 {
+    display: flex !important;
+    flex-direction: row;
+    width: 60%;
+    flex-wrap: nowrap;
+    table-layout: fixed;
+}
+
+/* Parte de items */
+
+p {
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+/* Ultima parte */
+
+.label-estilo {
+    color: white;
+    font-weight: 700; 
+    margin-top: 0px;
+    font-weight: 700;
+    margin-top: 0px
+}
+
+/* Contenedor de botones */
+
+.button-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+}
+
+button {
+    background-color: #2B3D37;
+    color: white;
+    padding: 0.8rem;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: #8cc4b3;
+    box-shadow: 1px 2px 10px 4px rgb(110, 192, 184);
+    scale: 1.5;
+}
+
+button[type="button"] {
+    background-image: url(/img/creativity_9168045.png);
+    background-size: cover;
+    padding: 1rem;
+    float: left;
+}
+
+::selection {
+    background-color: #889c9c;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        margin-left: 0rem; 
+        margin-right: 0rem;
+        width: 100%; 
+    }
+    h1 {
+        width: 100%; 
+        margin: 0.5rem; 
+    }
+}
+
+@media screen and (max-width: 634px) {
+    form {
+        margin: 0.5rem;
+        width: auto;
+        table-layout: fixed;
+        flex-wrap: nowrap;
+    }
+    h1 {
+        width: 91vw;
+        justify-content: center;
+        display: flex;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .container-fieldset {
+        width: 91vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1, .container-fieldset {
+        width: 100%;
+        table-layout: fixed;
+    }
+}

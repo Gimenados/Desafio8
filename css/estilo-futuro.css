@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Mono:wght@300&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+/* Paleta de colores 
+#274156 Carbon
+#59324A Violeta
+#E8719E Ciclamen */
+
+* {
+    background-color: #01112555;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;   
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+html {
+    background-image: url(/img/7242227f-cc13-4382-bf9d-d89a10eeac11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;    
+    flex-direction: column;
+    margin: 0px;
+}
+
+.container {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0.5rem;
+}
+
+h1 {
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    padding: 0px;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    text-shadow: 0 0 10px #E8719E,
+    0 0 20px #E8719E,
+    0 0 40px #E8719E,
+    0 0 80px #E8719E,
+    0 0 100px #E8719E;
+    width: 100%;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+fieldset {
+    backdrop-filter: blur(2px);
+    border-radius: 5%;
+    box-shadow: 3px 4px 20px 2px #E8719E;
+    height: auto;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.container-fieldset, .container-fieldset2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.container-1 {
+    display: flex;
+}
+
+
+input, textarea, select, label {
+    background: transparent;
+    border-bottom: 1px solid white !important;
+    border: none;
+    margin: 0.5rem;
+    outline: none;
+}
+
+textarea {
+    width: 80%;
+}
+
+label {
+    border: none !important;
+    width: 80%;
+}
+
+input[type="text"]{
+    height: 1rem;
+    width: 90%;
+}
+
+input[type="radio"] {
+    align-items: center;
+    height: 1rem;
+    justify-content: center;
+    width: 1rem;
+    margin: 0.5rem;
+}
+
+input[type="text"]:focus, 
+input[type="text"].not-empty,
+input[type="email"]:focus,
+input[type="email"].not.empty,
+input[type="tel"]:focus,
+input[type="tel"].not.empty
+ {
+    background-color: #234562;
+    color: white;
+}
+
+.text1, .text {
+    margin: 0.5rem;
+}
+
+p {
+    margin: 0px 2.5rem;
+}
+
+.button-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0px 1rem 0.5rem 1rem;
+    box-shadow: 3px 4px 20px 2px #E8719E;
+    padding: 0.5rem;
+    border-radius: 10%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: .5s;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #59324A;
+    box-shadow: 0 0 5px #E8719E,
+    0 0 20px #E8719E,
+    0 0 50px #E8719E,
+    0 0 80px #E8719E,
+    0 0 199px #E8719E;
+    scale: 1.5;
+}
+
+button[type="button"] {
+    background-image: url(/img/creativity_9168045.png);
+    background-size: cover;
+    padding: 1rem;
+    float: left;
+}
+
+@media (max-width: 1026px) {
+   .container {
+    flex-wrap: wrap;
+    margin: 0px 0.5rem;
+   }
+   button {
+    margin: 1rem;
+   }
+   p {
+    margin: 0px 3.5rem;
+   }
+   .container-fieldset, fieldset, .container-fieldset2 {
+    width: 71vw;
+   }
+   h1 {
+    font-size: 3rem;
+   }
+}
+
+@media (max-width: 475px) {
+    .container-fieldset2, button, .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        table-layout: fixed;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}

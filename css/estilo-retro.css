@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+
+/* Paleta de colores 
+#C94936 Jaspe
+#FFDA6D Ambar  */
+
+* {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+
+html {
+    background-image: url(https://i.pinimg.com/564x/dd/ee/63/ddee63962d13548f78a7de7405ae04d1.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #FFDA6D;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    font-weight: 900 !important;
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px black,
+                 0 0 20px black,
+                 0 0 40px black;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1rem;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.container {
+    align-items: flex-end;
+    backdrop-filter: blur(3px);
+    background-image: url(https://i.pinimg.com/564x/dd/ee/63/ddee63962d13548f78a7de7405ae04d1.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    box-shadow: 5px 6px 35px 9px black;
+    border: 1.5px solid black; 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0px 1.3rem 0px 1.3rem;
+    padding: 3.5rem;
+}
+
+.primer-section, .container-fieldset, .div-container {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    backdrop-filter: blur(5px);
+    border: 1px solid #111010;
+    box-shadow: 0px 6px 35px 9px black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+legend {
+    background-color: #e5e6db79;
+    box-shadow: 5px 6px 35px 9px black;
+    border: 1px solid #161414;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+label, textarea, select, input {
+    font-size: 1.5rem;
+    margin: 0.4rem ;
+}
+
+input[type="text"]:focus, 
+input[type="text"].not-empty,
+input[type="email"]:focus,
+input[type="email"].not.empty,
+input[type="tel"]:focus,
+input[type="tel"].not.empty, textarea:focus, textarea.not-empty
+ {
+    background-color: #ffda6dd2;
+    color: rgb(32, 31, 31);
+}
+
+
+.text1, .text {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+button {
+    background-color: #C94936;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: #FFC547;
+    box-shadow: 3px 4px 30px 7px black;
+    scale: 1.5;
+}
+
+button[type="button"] {
+    background-image: url(/img/creativity_9168045.png);
+    background-size: cover;
+    padding: 1rem;
+    float: left;
+}
+
+#recordarButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #C94936;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #recordarButton.active {
+    background-color: #FFC547;
+    box-shadow: 0 5px #FFC547;
+    transform: translateY(4px);
+  }
+
+@media (max-width: 1120px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 100vw; */
+        margin: 0px 1.3rem 0px 1.3rem;
+    }
+    form {
+        margin: 1rem;
+    }
+    .section.container {
+        display: flex;
+    }
+}
