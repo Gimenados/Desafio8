@@ -159,21 +159,6 @@ button[type="button"] {
     float: left;
 }
 
-#recordarButton {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #234562;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #recordarButton.active {
-    background-color: #59324A;
-    box-shadow: 0 5px #59324A;
-    transform: translateY(4px);
-  }
-
 @media (max-width: 1026px) {
    .container {
     flex-wrap: wrap;

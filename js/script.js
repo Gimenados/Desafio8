@@ -14,15 +14,3 @@ function onClick() {
   links[0].href = cssFiles[activeFile];
   console.log(cssFiles[activeFile]);
 }
-
-function recordarEstilo() {
-  console.log("Haciendo clic en Recordar");
-  const recordarButton = document.getElementById("recordarButton");
-  recordarButton.classList.toggle("active");
-
-  if (recordarButton.classList.contains("active")) {
-    localStorage.setItem("recordadoIndex", activeFile);
-  } else {
-    localStorage.removeItem("recordadoIndex");
-  }
-}
